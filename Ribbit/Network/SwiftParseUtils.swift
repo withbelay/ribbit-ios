@@ -112,7 +112,7 @@ class SwiftParseUtils {
         let gradientColors = [UIColor(named: "715AFF")?.cgColor, UIColor.clear.cgColor] as CFArray // Colors of the gradient
         let colorLocations: [CGFloat] = [1.0, 1.0] // Positioning of the gradient
         let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) //
-        lineChartDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0)
+        lineChartDataSet.fill = LinearGradientFill(gradient: gradient!, angle: 90.0)
         lineChartDataSet.drawFilledEnabled = true
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         cell.graph.data = lineChartData
@@ -224,7 +224,7 @@ class SwiftParseUtils {
         let gradientColors = [UIColor(named: "715AFF")?.cgColor, UIColor.clear.cgColor] as CFArray // Colors of the gradient
         let colorLocations: [CGFloat] = [1.0, 1.0] // Positioning of the gradient
         let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) //
-        lineChartDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0)
+        lineChartDataSet.fill = LinearGradientFill(gradient: gradient!, angle: 90.0)
         lineChartDataSet.drawFilledEnabled = true
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         graph.data = lineChartData
@@ -311,7 +311,7 @@ class SwiftParseUtils {
         let gradientColors = [UIColor(named: "715AFF")?.cgColor, UIColor.clear.cgColor] as CFArray // Colors of the gradient
         let colorLocations: [CGFloat] = [1.0, 1.0] // Positioning of the gradient
         let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) // Gradient Object
-        lineChartDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
+        lineChartDataSet.fill = LinearGradientFill(gradient: gradient!, angle: 90.0) // Set the Gradient
         lineChartDataSet.drawFilledEnabled = true
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
         sparkLineView.data = lineChartData

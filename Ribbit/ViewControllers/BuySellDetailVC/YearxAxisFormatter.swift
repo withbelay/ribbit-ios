@@ -7,7 +7,7 @@
 
 import Charts
 import Foundation
-class YearxAxisFormatter: NSObject, IAxisValueFormatter {
+class YearxAxisFormatter: NSObject, AxisValueFormatter {
     let secondsPerDay = 24.0 * 3_600.0
     let dateFormatter = DateFormatter()
       override init() {
